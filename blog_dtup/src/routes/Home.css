@@ -1,0 +1,35 @@
+.home h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ee0202;
+}
+
+.post h2, 
+.post p {
+    margin-bottom: 1rem;
+}
+
+.post h2::first-letter {
+    text-transform: uppercase;
+}
+
+.btn {
+    color: #f3d5d5;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+    font-weight: bold;
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-import axios from "axios"
+import blogDtup from "../axios/config"
 
 // ESTILOS
 import "./Home.css"
@@ -14,7 +14,7 @@ const Home = () => {
   
     try {
       
-      const response = await axios.get("https://jsonplaceholder.typicode.com/posts") 
+      const response = await blogDtup.get("/posts") 
 
       const data = response.data;
 
@@ -33,7 +33,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
+    <div className="home">
       <h1>Últimos posts</h1>
       {posts.length === 0 ? (<p>Carregando</p>) : (
         posts.map((post) => (
