@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
 
+// ESTILOS
+import "./NavBar.css"
+
 const NavBar = () => {
   return (
     <nav className="navbar">
