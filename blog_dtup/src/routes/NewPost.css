@@ -7,7 +7,6 @@ h2 {
     margin-bottom: 1.1rem;
 }
 
-
 form {
     max-width: 500px;
     width: 100%;
@@ -33,7 +32,13 @@ form {
 }
 
 .btn-enviar {
-    border-radius: 8px;
+    border-radius: 9px;
     width: 5.5rem;
     height: 1.4rem;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
 }
