@@ -28,6 +28,15 @@ const Admin = () => {
     }
   }
 
+  const deletePost = async(id) => {
+
+    await blogDtup.delete(`/posts/${id}`)
+
+    const filterDeletPost = posts.filter((post) => post.id !== id)
+
+    SetPosts(filterDeletPost)
+  }
+
 
   useEffect(() => {
     getPosts();
@@ -42,7 +51,7 @@ const Admin = () => {
             <h2>{post.title}</h2>
             <div className="actions">
               <Link className="edit-btn">Editar post</Link>
-              <button className="delete-btn">Excluir post</button>
+              <button className="delete-btn" onClick={() => deletePost(post.id)}>Excluir post</button>
             </div>
           </div>
         ))

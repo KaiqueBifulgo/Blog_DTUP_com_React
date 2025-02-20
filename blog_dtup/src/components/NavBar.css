@@ -15,6 +15,21 @@
     gap: 1rem;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #dcc1c1;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 1;
+}
+
 .new-btn {
     font-weight: bold;
     border: 1px solid #e1dbdb;

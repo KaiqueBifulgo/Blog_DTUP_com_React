@@ -19,8 +19,12 @@
 }
 
 .edit-btn {
-    background-color: #66ff00;
+    background-color: #61d116;
+    opacity: 1;
+    text-align: center;
+    
 }
+
 
 .delete-btn {
     background-color: #ee2222;
