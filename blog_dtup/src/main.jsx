@@ -3,12 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-import {createBrowserRouter, Route, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 // PAGINAS
 import Home from './routes/Home.jsx'
 import NewPost from './routes/NewPost.jsx'
 import Post from './routes/Post.jsx'
+import Admin from './routes/Admin.jsx'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/posts/:id",
         element: <Post/>
+      },
+      {
+        path: "/admin",
+        element: <Admin/>
       }
     ]
   }
