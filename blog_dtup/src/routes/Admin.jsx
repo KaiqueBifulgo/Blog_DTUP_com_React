@@ -50,7 +50,7 @@ const Admin = () => {
           <div className="post" key={post.id}>
             <h2>{post.title}</h2>
             <div className="actions">
-              <Link className="edit-btn">Editar post</Link>
+              <Link className="edit-btn" to={`/posts/edit/${post.id}`}>Editar post</Link>
               <button className="delete-btn" onClick={() => deletePost(post.id)}>Excluir post</button>
             </div>
           </div>
