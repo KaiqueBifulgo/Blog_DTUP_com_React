@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 import { useNavigate, useParams } from "react-router-dom"
 
-import "./NewPost.css"
+import "./EditPost.css"
 
 const EditPost = () => {
 
@@ -17,18 +17,18 @@ const EditPost = () => {
 
 
   return (
-    <div className="new-post">
-      <h2>Editando {title}</h2>
+    <div className="edit-post">
+      <h2>Editando post: {title}</h2>
       <form onSubmit={(e) => editPost(e)}>
         <div className="form-control">
-          <label htmlFor="title">Título do post</label>
-          <input type="text" name="title" id="title" placeholder="Escreva o título do post" onChange={(e) => setTitle(e.target.value)}/>  
+          <label htmlFor="title">Editar título do post</label>
+          <input type="text" name="title" id="title" placeholder="Escreva o novo título do post" onChange={(e) => setTitle(e.target.value)}/>  
         </div>
         <div className="form-control">
-          <label htmlFor="body">Conteúdo:</label>
+          <label htmlFor="body">Editar conteúdo:</label>
           <textarea name="body" id="body" placeholder="Edite seu post!" onChange={(e) => setBody(e.target.value)}></textarea>
         </div>
-        <input type="submit" value="Enviar post" className="btn-enviar" />
+        <input type="submit" value="Confirmar edição de post" className="btn-edit-enviar" />
       </form>
     </div>
   )
