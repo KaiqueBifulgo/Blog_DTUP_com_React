@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "homepage": "https://KaiqueBifulgo.github.io/blog_dtup/",
   "name": "blog_dtup", 
   "private": true,
